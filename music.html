@@ -1,0 +1,45 @@
+<header class="app-header">
+  <button class="back-btn" onclick="goHome()">←</button>
+  <h2>Music Player</h2>
+</header>
+
+<div class="app-content music-app-container">
+  
+  <!-- Album Art & Track Info -->
+  <div class="music-player-main">
+    <div class="music-art" id="musicArt">
+      <span class="music-note">🎵</span>
+    </div>
+    <h3 class="music-title" id="musicTitle">Loading...</h3>
+    <p class="music-artist" id="musicArtist">...</p>
+  </div>
+
+  <!-- Progress Bar & Time -->
+  <div class="music-progress-container">
+    <div class="music-progress-bar" id="progressBar">
+      <div class="music-progress-fill" id="progressFill"></div>
+    </div>
+    <div class="music-time">
+      <span id="currentTime">0:00</span>
+      <span id="totalTime">0:00</span>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <div class="music-controls">
+    <button class="music-btn" id="prevTrack">⏮</button>
+    <button class="music-btn play-pause" id="appPlayPauseBtn">▶</button>
+    <button class="music-btn" id="nextTrack">⏭</button>
+  </div>
+
+  <!-- Playlist -->
+  <div class="music-playlist">
+    <h4>Playlist</h4>
+    <ul id="playlist">
+      <!-- Dynamic ito mula sa music.js -->
+    </ul>
+  </div>
+
+  <!-- Hidden Audio (Nandito na para siguradong mahanap) -->
+  <audio id="bgMusic"></audio>
+</div>

@@ -1,0 +1,32 @@
+<header class="app-header">
+  <button class="back-btn" onclick="goHome()">←</button>
+  <h2>App Settings</h2>
+</header>
+
+<div class="app-content settings-page">
+  <div class="settings-group">
+    <h4>Wallpaper</h4>
+    <div class="wallpaper-options">
+      <button class="wp-btn" data-bg="gradient">Default</button>
+      <button class="wp-btn" data-bg="#0f172a">Dark Blue</button>
+      <button class="wp-btn" data-bg="#1e1b4b">Purple</button>
+      <button class="wp-btn" data-bg="#2a1215">Maroon</button>
+    </div>
+  </div>
+
+  <div class="settings-group">
+    <h4>Theme</h4>
+    <button id="settingsThemeToggle" class="settings-row-btn">
+      <span>Dark / Light Mode</span>
+      <span id="themeIcon">🌙</span>
+    </button>
+  </div>
+
+  <div class="settings-group">
+    <h4>Share</h4>
+    <button id="shareBtn" class="settings-row-btn">
+      <span>🔗 Share My Portfolio</span>
+      <span>↗</span>
+    </button>
+  </div>
+</div>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#6c5ce7" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>My Portfolio</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon-192.png" />
+  <link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <!-- BOOT SCREEN -->
+  <div class="boot-screen" id="bootScreen">
+    <div class="boot-logo">📱</div>
+    <div class="boot-text">My Portfolio</div>
+    <div class="boot-loader"><span></span></div>
+  </div>
+
+  <!-- PHONE FRAME -->
+  <div class="phone" id="phone">
+    
+    <!-- DYNAMIC ISLAND (Notch) -->
+    <div class="phone-notch" id="notch">
+      <div class="island-content" id="islandContent">
+        <span id="islandText">Playing Music 🎵</span>
+      </div>
+    </div>
+
+    <!-- STATUS BAR -->
+    <div class="status-bar">
+      <span id="clock">00:00</span>
+      <div class="status-right">
+        <button class="theme-toggle" id="themeToggle" title="Toggle theme">🌙</button>
+        <span id="battery">🔋 100%</span>
+      </div>
+    </div>
+
+    <!-- SCREEN -->
+    <div class="screen" id="screenWrap">
+
+      <!-- SLEEP SCREEN -->
+      <div class="sleep-screen" id="sleepScreen"></div>
+
+      <!-- NOTIFICATION PANEL -->
+      <div class="notification-panel" id="notifPanel">
+        <div class="notif-header">Notifications</div>
+        <div class="notif-item"><strong>📩 Welcome!</strong><p>Thanks for visiting my portfolio.</p></div>
+        <div class="notif-item"><strong id="notifMusicText">🎵 Now Playing</strong><p id="notifMusicDesc">Empire State of Mind</p></div>
+        <div class="notif-item"><strong>🔋 Battery Alert</strong><p id="batteryAlertText">Your battery is doing great.</p></div>
+      </div>
+
+      <!-- LOCK SCREEN -->
+      <section class="lock-screen active" id="lockScreen">
+        <div class="lock-time" id="lockClock">00:00</div>
+        <div class="lock-date" id="lockDate">—</div>
+        <div class="lock-hint">Swipe up to unlock ⬆️</div>
+      </section>
+
+      <!-- HOME SCREEN -->
+      <section class="app-screen" id="home">
+       <div class="home-header">
+ 	 <h1 class="home-title">My Portfolio</h1>
+ 	 <button class="settings-btn" data-target="settings">⚙️</button>
+	</div>
+	 <!--<div class="home-header">
+          <h1 class="home-title">My Portfolio</h1>
+          <button class="settings-btn" id="openSettings">⚙️</button>
+        </div> -->
+
+        <div class="search-bar-container">
+          <input type="text" id="appSearch" placeholder="Search apps..." />
+        </div>
+
+        <!-- WEATHER WIDGET -->
+        <div class="widget weather-widget" id="weatherWidget" style="cursor: pointer;">
+          <div class="w-left"><span class="w-temp" id="wTemp">--°C</span><span class="w-city">Manila</span></div>
+          <div class="w-right"><span class="w-icon" id="wIcon">⛅</span><span class="w-desc" id="wDesc">Loading...</span></div>
+        </div>
+
+        <!-- MUSIC WIDGET (Mini - Clickable) -->
+        <div class="widget music-widget" id="musicWidget" style="cursor: pointer;">
+          <div class="m-top">
+            <div class="m-left">
+              <span class="m-icon">🎵</span>
+              <div class="m-info">
+                <span class="m-title">Now Playing</span>
+                <span class="m-artist">Open Music App</span>
+              </div>
+            </div>
+            <div class="m-controls">
+              <button id="miniPlayBtn" class="m-btn">▶</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- APP GRID -->
+        <div class="app-grid" id="appGrid">
+          <button class="app-icon" data-target="about" data-name="About"><span class="icon">👤</span><span>About</span></button>
+          <button class="app-icon" data-target="projects" data-name="Projects"><span class="icon">💼</span><span>Projects</span></button>
+          <button class="app-icon" data-target="skills" data-name="Skills"><span class="icon">⚙️</span><span>Skills</span></button>
+          <button class="app-icon" data-target="gallery" data-name="Gallery"><span class="icon">🖼️</span><span>Gallery</span></button>
+          <button class="app-icon" data-target="contact" data-name="Contact"><span class="icon">✉️</span><span>Contact</span></button>
+          <button class="app-icon" data-target="calc" data-name="Calculator"><span class="icon">🧮</span><span>Calc</span></button>
+          <button class="app-icon" data-target="notes" data-name="Notes"><span class="icon">📝</span><span>Notes</span></button>
+          <button class="app-icon" id="facebookBtn"><span class="icon" style="background: #1877F2;">📘</span><span>Facebook</span></button>
+          <button class="app-icon" data-target="game" data-name="Game"><span class="icon">🎮</span><span>Game</span></button>
+          <button class="app-icon" data-target="dashboard" data-name="Dashboard"><span class="icon">📊</span><span>Dashboard</span></button>
+        </div>
+      </section>
+
+      <!-- DYNAMIC APP SCREENS -->
+      <section class="app-screen" id="about" data-app="about"></section>
+      <section class="app-screen" id="projects" data-app="projects"></section>
+      <section class="app-screen" id="skills" data-app="skills"></section>
+      <section class="app-screen" id="gallery" data-app="gallery"></section>
+      <section class="app-screen" id="contact" data-app="contact"></section>
+      <section class="app-screen" id="calc" data-app="calc"></section>
+      <section class="app-screen" id="notes" data-app="notes"></section>
+      <section class="app-screen" id="game" data-app="game"></section>
+      <section class="app-screen" id="dashboard" data-app="dashboard"></section>
+      
+      <!-- MUSIC APP SCREEN -->
+      <section class="app-screen" id="music" data-app="music"></section>
+
+      <!-- FACEBOOK APP -->
+      <section class="app-screen" id="facebookApp" style="padding: 0;">
+        <div class="fb-header">
+          <button class="back-btn" onclick="goHome()">←</button>
+          <span style="font-weight: 600; font-size: 15px;">Facebook</span>
+          <a href="https://m.facebook.com" target="_blank" class="fb-newtab">Open Tab ↗</a>
+        </div>
+        <iframe src="https://m.facebook.com" class="fb-iframe" title="Facebook"></iframe>
+      </section>
+
+      <!-- WEATHER MODAL -->
+      <div class="weather-modal" id="weatherModal"></div>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+          <img src="" alt="" id="lightboxImg" />
+          <a id="downloadImgBtn" class="download-btn" download="gallery-image.jpg">⬇ Save Image</a>
+        </div>
+      </div>
+
+      <!-- PROJECT DETAILS MODAL -->
+      <div class="project-modal" id="projectModal">
+        <div class="project-modal-content">
+          <img src="" alt="" id="pmImg" />
+          <div class="pm-info">
+            <h2 id="pmTitle">Project Title</h2>
+            <p id="pmDesc">Project Description</p>
+            <button class="close-settings" onclick="document.getElementById('projectModal').classList.remove('show')">Close</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- APP SWITCHER -->
+      <div class="app-switcher" id="appSwitcher">
+        <div class="switcher-header">Recent Apps</div>
+        <div class="switcher-cards" id="switcherCards"></div>
+        <button class="switcher-close" id="switcherClose">✕ Close</button>
+      </div>
+
+      
+        <!-- SETTINGS APP SCREEN -->
+	<section class="app-screen" id="settings" data-app="settings"></section>
+	
+
+
+    </div> <!-- End of screenWrap -->
+
+    <!-- HOME BUTTON -->
+    <button class="home-btn" id="homeBtn"></button>
+  </div> <!-- End of phone -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>

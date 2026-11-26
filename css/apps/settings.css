@@ -1,0 +1,51 @@
+/* ===== SETTINGS APP ===== */
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.settings-group {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+.settings-group h4 {
+  font-size: 11px;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+.wallpaper-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.wp-btn {
+  padding: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  background: var(--icon-bg);
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+.wp-btn:active { transform: scale(0.95); }
+
+.settings-row-btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--icon-bg);
+  border: none;
+  color: var(--text);
+  padding: 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+.settings-row-btn:last-child { margin-bottom: 0; }
+.settings-row-btn:active { transform: scale(0.98); }

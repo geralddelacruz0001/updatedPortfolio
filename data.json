@@ -1,0 +1,75 @@
+{
+  "profile": {
+    "name": "Gerald Dela Cruz",
+    "role": "Frontend Developer & UI Designer",
+    "about": "Hello! Ako si Gerald. Isang web developer na mahilig gumawa ng kakaibang mobile UI gamit ang HTML, CSS, at JavaScript."
+  },
+  "experience": [
+    {
+      "title": "Frontend Developer",
+      "company": "Freelance",
+      "date": "2023 - Present",
+      "desc": "Gumagawa ng modernong web interfaces para sa iba't ibang clients gamit ang HTML, CSS, at JS."
+    },
+    {
+      "title": "Junior Web Developer",
+      "company": "Tech Startup PH",
+      "date": "2022 - 2023",
+      "desc": "Nag-develop ng responsive websites at nagsagawa ng UI/UX improvements."
+    }
+  ],
+  "contact": {
+    "email": "delacruzgerald042017@gmail.com",
+    "phone": "+63 912 345 6789",
+    "location": "Pampanga, Philippines"
+  },
+  "skills": [
+    { "name": "HTML5", "level": 95, "icon": "devicon-html5-plain colored" },
+    { "name": "CSS3", "level": 90, "icon": "devicon-css3-plain colored" },
+    { "name": "JavaScript", "level": 85, "icon": "devicon-javascript-plain colored" },
+    { "name": "React Native", "level": 75, "icon": "devicon-react-original colored" },
+    { "name": "Python", "level": 75, "icon": "devicon-python-plain colored" },
+    { "name": "PHP", "level": 75, "icon": "devicon-php-plain colored" },
+    { "name": "C++", "level": 75, "icon": "devicon-cplusplus-plain colored" },
+    { "name": "C#", "level": 75, "icon": "devicon-csharp-plain colored" },
+    { "name": "Termux / CLI", "level": 80, "icon": "devicon-bash-plain colored" },
+    { "name": "UI / UX Design", "level": 75, "icon": "devicon-figma-plain colored" }
+  ],
+  "projects": [
+    {
+      "title": "Mobile Portfolio",
+      "desc": "Isang portfolio na parang totoong cellphone. May lock screen, apps, at music player.",
+      "img": "images/python1.png"
+    },
+    {
+      "title": "E-Commerce UI",
+      "desc": "Isang modernong tindahan sa web na may dark mode at glassmorphism effects.",
+      "img": "images/python1.png"
+    },
+    {
+      "title": "Developer Dashboard",
+      "desc": "Isang modernong dashboard interface na may interactive cards at responsive layout.",
+      "img": "images/python1.png"
+    }
+  ],
+  "gallery": [
+    "images/html1.png",
+    "images/css1.png",
+    "images/javascript1.png",
+    "images/python1.png",
+    "images/csharp1.png",
+    "images/myprofile.jpg"
+  ],
+  "music": [
+    {
+      "title": "Empire State of Mind",
+      "artist": "Jay-Z ft. Alicia Keys",
+      "src": "assets/empire.mp3"
+    },
+    {
+      "title": "Hall of Fame",
+      "artist": "The Script",
+      "src": "assets/champion.mp3"
+    }
+  ]
+}
